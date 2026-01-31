@@ -8,5 +8,15 @@ Once the example.spec.ts installed run test in terminal: `npx playright test`
 
 
 To open last HTML report run:  npx playwright show-report
-Run with open browser: npx playwright test - - headed
-Or run it with playwright ui for check and debug : npx playwright test - - ui
+
+See the browser window: add --headed.
+Run a single project/browser: --project=chromium.
+Run one file: npx playwright test tests/example.spec.ts.
+Open testing UI: --ui.
+
+Playwright Test is based on the concept of test fixtures. 
+Test fixtures are used to establish the environment for each test, 
+giving the test everything it needs and nothing else. 
+Test fixtures are isolated between tests. With fixtures, you can group tests based on their meaning, 
+instead of their common setup. 
+refer to https://playwright.dev/docs/test-fixtures 
